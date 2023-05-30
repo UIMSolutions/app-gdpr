@@ -1,6 +1,6 @@
-module apps.myname.views.error;
+module apps.gdpr.views.error;
 
-import apps.myname;
+import apps.gdpr;
 @safe:
 
 class DMYNAMEErrorView : DView {

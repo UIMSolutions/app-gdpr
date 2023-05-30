@@ -1,6 +1,6 @@
-module apps.myname.controllers.pages.error;
+module apps.gdpr.controllers.pages.error;
 
-import apps.myname;
+import apps.gdpr;
 @safe:
 
 class DMYNAMEErrorPageController : DAPPPageController {

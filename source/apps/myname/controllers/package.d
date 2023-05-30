@@ -1,7 +1,7 @@
-module apps.myname.controllers;
+module apps.gdpr.controllers;
 
 public { // Packages
-  import apps.myname.controllers.actions;
-  import apps.myname.controllers.components;
-  import apps.myname.controllers.pages;
+  import apps.gdpr.controllers.actions;
+  import apps.gdpr.controllers.components;
+  import apps.gdpr.controllers.pages;
 }

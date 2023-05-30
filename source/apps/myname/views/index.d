@@ -1,6 +1,6 @@
-module apps.myname.views.index;
+module apps.gdpr.views.index;
 
-import apps.myname;
+import apps.gdpr;
 @safe:
 
 class DMYNAMEIndexView : DView {
@@ -11,7 +11,7 @@ class DMYNAMEIndexView : DView {
     super.toH5(options);
 
     return [
-      H5Div("APP myname -> Error")
+      H5Div("APP gdpr -> Error")
     ].toH5;
   }
 }

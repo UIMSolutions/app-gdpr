@@ -1,6 +1,6 @@
-module apps.myname.controllers.pages.index;
+module apps.gdpr.controllers.pages.index;
 
-import apps.myname;
+import apps.gdpr;
 @safe:
 
 class DMYNAMEIndexPageController : DAPPPageController {

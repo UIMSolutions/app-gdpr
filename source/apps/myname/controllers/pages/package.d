@@ -1,6 +1,6 @@
-module apps.myname.controllers.pages;
+module apps.gdpr.controllers.pages;
 
 public {
-  import apps.myname.controllers.pages.error;
-  import apps.myname.controllers.pages.index;
+  import apps.gdpr.controllers.pages.error;
+  import apps.gdpr.controllers.pages.index;
 }

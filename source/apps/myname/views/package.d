@@ -1,10 +1,10 @@
-module apps.myname.views;
+module apps.gdpr.views;
 
 public {
-  import apps.myname.views.components;
-  import apps.myname.views.forms;
-  import apps.myname.views.pages;
+  import apps.gdpr.views.components;
+  import apps.gdpr.views.forms;
+  import apps.gdpr.views.pages;
 }
 
-public import apps.myname.views.error;
-public import apps.myname.views.index;
+public import apps.gdpr.views.error;
+public import apps.gdpr.views.index;
