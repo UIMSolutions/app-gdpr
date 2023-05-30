@@ -1,2 +1,2 @@
-module apps.myname.views.forms.bodies;
+module apps.gdpr.views.forms.bodies;
 
