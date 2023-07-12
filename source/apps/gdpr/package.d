@@ -27,9 +27,11 @@ public {
 
 DApp gdprApp;
 static this() {
-  gdprApp = App
-    .name("gdprApp")
-    .rootPath("/apps/gdpr")
-    .addRoute(Route("", HTTPMethod.GET, MYNAMEIndexPageController))
-    .addRoute(Route("/", HTTPMethod.GET, MYNAMEIndexPageController));
+  gdprApp = App("gdprApp", "/apps/gdpr")
+      .importTranslations()
+      .addRoutes(
+        Route("", HTTPMethod.GET, IndexPageController),
+        Route("/", HTTPMethod.GET, IndexPageController)
+      )
+    );
 }
