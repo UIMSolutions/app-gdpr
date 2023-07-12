@@ -3,14 +3,14 @@ module apps.gdpr.controllers.pages.index;
 import apps.gdpr;
 @safe:
 
-class DMYNAMEIndexPageController : DAPPPageController {
-  mixin(ControllerThis!("MYNAMEIndexPageController"));
+class DGDPRIndexPageController : DAPPPageController {
+  mixin(ControllerThis!("GDPRIndexPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
 
     this
-      .view(MYNAMEIndexView(this));
+      .view(GDPRIndexView(this));
   }
 }
-mixin(ControllerCalls!("MYNAMEIndexPageController"));
+mixin(ControllerCalls!("GDPRIndexPageController"));
