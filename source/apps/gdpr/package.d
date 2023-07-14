@@ -25,9 +25,9 @@ public {
   import apps.gdpr.views;
 }
 
-DApp gdprApp;
 static this() {
-  gdprApp = App("gdprApp", "/apps/gdpr")
+  AppRegistry.register("apps.gdpr",  
+    App("gdprApp", "/apps/gdpr")
       .importTranslations()
       .addRoutes(
         Route("", HTTPMethod.GET, IndexPageController),

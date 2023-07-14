@@ -3,11 +3,11 @@ module apps.gdpr.views.index;
 import apps.gdpr;
 @safe:
 
-class DGDPRIndexView : DView {
-  mixin(ViewThis!("GDPRIndexView"));
+class DIndexView : DView {
+  mixin(ViewThis!("IndexView"));
 
   override DH5Obj[] toH5(STRINGAA options = null) {
-    debugMethodCall(moduleName!DGDPRIndexView~":DGDPRIndexView("~this.name~")::toH5");
+    debugMethodCall(moduleName!DIndexView~":DIndexView("~this.name~")::toH5");
     super.toH5(options);
 
     return [
@@ -15,4 +15,4 @@ class DGDPRIndexView : DView {
     ].toH5;
   }
 }
-mixin(ViewCalls!("GDPRIndexView"));
+mixin(ViewCalls!("IndexView"));

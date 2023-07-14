@@ -3,14 +3,14 @@ module apps.gdpr.controllers.pages.error;
 import apps.gdpr;
 @safe:
 
-class DGDPRErrorPageController : DAPPPageController {
-  mixin(ControllerThis!("GDPRErrorPageController"));
+class DErrorPageController : DPageController {
+  mixin(ControllerThis!("ErrorPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
 
     this
-      .view(GDPRErrorView(this));
+      .view(ErrorView(this));
   }
 }
-mixin(ControllerCalls!("GDPRErrorPageController"));
+mixin(ControllerCalls!("ErrorPageController"));
