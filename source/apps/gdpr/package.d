@@ -27,7 +27,7 @@ public {
 
 static this() {
   AppRegistry.register("apps.gdpr",  
-    App("gdprApp", "/apps/gdpr")
+    App("gdprApp", "apps/gdpr")
       .importTranslations()
       .addRoutes(
         Route("", HTTPMethod.GET, IndexPageController),
