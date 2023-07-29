@@ -2,8 +2,10 @@ module apps.gdpr;
 
 mixin(ImportPhobos!());
 
-// Dub
-public import vibe.d;
+// External
+public {
+  import vibe.d;
+}
 
 // UIM
 public import uim.core;
@@ -26,12 +28,17 @@ public {
 }
 
 static this() {
-  AppRegistry.register("apps.gdpr",  
-    App("gdprApp", "apps/gdpr")
-      .importTranslations()
-      .addRoutes(
-        Route("", HTTPMethod.GET, IndexPageController),
-        Route("/", HTTPMethod.GET, IndexPageController)
-      )
+  auto myApp = App("gdprApp", "apps/gdpr");
+  with(myApp) {
+    importTranslations;
+    addControllers([
+      "gdpr.index": IndexPageController
+    ]);
+    addRoutes(
+      Route("", HTTPMethod.GET, controller("gdpr.index")),
+      Route("/", HTTPMethod.GET, controller("gdpr.index"))
     );
+  }
+
+  AppRegistry.register("apps.gdpr", myApp);
 }
